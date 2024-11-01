@@ -11,7 +11,7 @@ def validate(passwords):
     return valid_passwords
 
 def validate_passwords():
-    password_input_file = os.path.join(r"UST-python-assessment\input_data", "password_validator_input.txt")
+    password_input_file = "input_data/password_validator_input.txt"
     with open(password_input_file, "r") as file:
         passwords = file.read().strip().split(',')
     valid_passwords = validate(passwords)

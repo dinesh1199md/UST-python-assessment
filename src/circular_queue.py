@@ -30,7 +30,7 @@ class CircularQueue:
 
 
 def circular_queues():
-    queue_input_file_path = os.path.join(r"UST-python-assessment\input_data", "circular_queue_input.txt")
+    queue_input_file_path = "input_data/circular_queue_input.txt"
     # Read commands from the input file and execute them
     with open(queue_input_file_path, "r") as file:
         for line in file:
