@@ -9,7 +9,7 @@ def frequency_check(text):
 
 def word_frequency():
     try:
-        input_file_path = os.path.join("ust-python\input_data", "word_frequency_input.txt")
+        input_file_path = os.path.join(r"UST-python-assessment\input_data", "word_frequency_input.txt")
         with open(input_file_path,"r") as file:
             texts=file.read().strip()
         if texts:
