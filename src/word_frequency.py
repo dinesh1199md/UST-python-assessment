@@ -12,7 +12,7 @@ def word_frequency():
             texts=file.read().strip()
         if texts:
             frq_result=frequency_check(texts)
-            print("Word frequency sorted alphanumerically :\n",frq_result)
+            print(f"Word frequency sorted alphanumerically : \n{frq_result}")
             print()
         else:
             print("Please Check the inputfile")

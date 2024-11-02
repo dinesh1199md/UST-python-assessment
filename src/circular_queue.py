@@ -39,8 +39,7 @@ def circular_queues():
                 cq = CircularQueue(5)
                 for i in nums:
                     cq.enqueue(i)  
-                print(f"Input : {nums}")  
-                print("Output :",list(cq.queue.values()))
+                print(f"Input : {nums}\nOutput : {list(cq.queue.values())}")
                 print()
     except FileNotFoundError as e:
         print(f"Error: {e}")            

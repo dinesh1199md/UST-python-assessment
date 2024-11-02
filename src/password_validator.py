@@ -15,8 +15,7 @@ def validate_passwords():
         with open(password_input_file, "r") as file:
             passwords = file.read().strip().split(',')
         valid_passwords = validate(passwords)
-        print("Input_passwords :",passwords)
-        print("Valid passwords:", ', '.join(valid_passwords))
+        print(f"Input_passwords : {passwords} \nValid passwords:", ', '.join(valid_passwords))
     except FileNotFoundError as e:
         print(f"Error: {e}")
     except Exception as e:
