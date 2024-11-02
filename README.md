@@ -16,19 +16,24 @@ This project consists of several Python programs, each implementing a specific f
 ## Running programs 
 - Run the Main Program: This will execute all three programs in parallel using multi-threading..
 
-`bash`
+```
 cd UST-python-assessment 
+```
+```
 python -m bin.main
+```
 
 ## Running Unit Tests
 - Each function in the code has associated unit tests, located in the tests/ folder.
 
 - To run all unit tests:
 
-`bash`
+```
 cd UST-python-assessment 
+```
+```
 python -m tests.unit_test
-
+```
 
 ## Project Structure
 
