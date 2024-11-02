@@ -17,6 +17,7 @@ This project consists of several Python programs, each implementing a specific f
 - Run the Main Program: This will execute all three programs in parallel using multi-threading..
 
 `bash`
+cd UST-python-assessment 
 python -m bin.main
 
 ## Running Unit Tests
@@ -25,6 +26,7 @@ python -m bin.main
 - To run all unit tests:
 
 `bash`
+cd UST-python-assessment 
 python -m tests.unit_test
 
 
