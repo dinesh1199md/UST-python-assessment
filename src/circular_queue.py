@@ -1,4 +1,4 @@
-import os 
+
 class CircularQueue:
     def __init__(self, max_size):
         self.queue = {}
@@ -30,14 +30,19 @@ class CircularQueue:
 
 
 def circular_queues():
-    queue_input_file_path = "input_data/circular_queue_input.txt"
-    # Read commands from the input file and execute them
-    with open(queue_input_file_path, "r") as file:
-        for line in file:
-            nums = line.strip().split()
-            cq = CircularQueue(5)
-            for i in nums:
-                cq.enqueue(i)  
-            print(f"Input : {nums}")  
-            print("Output :",list(cq.queue.values()))
-            print()
+    try:
+        queue_input_file_path = "input_data/circular_queue_input.txt"
+        # Read commands from the input file and execute them
+        with open(queue_input_file_path, "r") as file:
+            for line in file:
+                nums = line.strip().split()
+                cq = CircularQueue(5)
+                for i in nums:
+                    cq.enqueue(i)  
+                print(f"Input : {nums}")  
+                print("Output :",list(cq.queue.values()))
+                print()
+    except FileNotFoundError as e:
+        print(f"Error: {e}")            
+    except Exception as e:
+        print("Exception @circular_queues :",e)

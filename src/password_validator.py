@@ -1,4 +1,3 @@
-import os
 import re
 
 def validate(passwords):
@@ -11,9 +10,14 @@ def validate(passwords):
     return valid_passwords
 
 def validate_passwords():
-    password_input_file = "input_data/password_validator_input.txt"
-    with open(password_input_file, "r") as file:
-        passwords = file.read().strip().split(',')
-    valid_passwords = validate(passwords)
-    print("Input_passwords :",passwords)
-    print("Valid passwords:", ', '.join(valid_passwords))
+    try:
+        password_input_file = "input_data/password_validator_input.txt"
+        with open(password_input_file, "r") as file:
+            passwords = file.read().strip().split(',')
+        valid_passwords = validate(passwords)
+        print("Input_passwords :",passwords)
+        print("Valid passwords:", ', '.join(valid_passwords))
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print("Exception @validate_passwords:",e) 

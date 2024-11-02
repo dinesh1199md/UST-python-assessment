@@ -1,6 +1,4 @@
 
-import os
-
 def frequency_check(text):
     words=text.split()
     word={x:words.count(x) for x in words }
@@ -18,5 +16,7 @@ def word_frequency():
             print()
         else:
             print("Please Check the inputfile")
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
     except Exception as e:
         print("Exception @word_frequency:",e)
