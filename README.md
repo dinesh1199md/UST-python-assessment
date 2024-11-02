@@ -4,18 +4,14 @@ This project consists of several Python programs, each implementing a specific f
 
 ## Table of Contents
 1. [Requirements](#requirements)
-2. [Installation and Setup](#installation-and-setup)
-3. [Running programs](#running-programs)
-4. [Running Unit Tests](#running-unit-tests)
-5. [Project Structure](#project-structure)
+2. [Running programs](#running-programs)
+3. [Running Unit Tests](#running-unit-tests)
+4. [Project Structure](#project-structure)
 
 
 ---
 ## Requirements
-You can install `requirements.txt` via pip:
-
-`bash`
-pip install -r requirements.txt
+- python>=3.9 version 
 
 ## Running programs 
 - Run the Main Program: This will execute all three programs in parallel using multi-threading..
@@ -24,13 +20,12 @@ pip install -r requirements.txt
 python -m bin.main
 
 ## Running Unit Tests
-### Each function in the code has associated unit tests, located in the tests/ folder.
+- Each function in the code has associated unit tests, located in the tests/ folder.
 
 - To run all unit tests:
 
 `bash`
-python -m tests.unit_test.py
-
+python -m tests.unit_test
 
 
 ## Project Structure
